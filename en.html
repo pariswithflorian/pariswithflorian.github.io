@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Paris with Florian – English</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Spectral&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Paris with Florian – English (The Tour)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      font-family: 'Spectral', serif;
+      font-family: sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       background-color: #b896c8;
-      color: #333;
+      color: #ffffff;
+      text-align: center;
       line-height: 1.6;
     }
     header {
-      text-align: center;
-      margin-bottom: 30px;
+      padding: 20px 0;
     }
     header img {
-      width: 250px;
+      width: 60%;
       height: auto;
-      margin-top: 20px;
+      max-width: 700px;
     }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      text-align: center;
+    /* Üst menü: ana sayfadaki .lang-links stilinin aynısı */
+    .top-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px auto 20px auto;
+      padding: 0 16px;
     }
+    .top-links a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid #ffffff;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+    .top-links a:hover {
+      background-color: #ffffff;
+      color: #b896c8;
+    }
+    /* İçerik kabı */
     .content {
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 30px auto 60px auto;
+      padding: 0 16px;
+      text-align: left; /* okuma rahatlığı için */
     }
-    ul {
+    .content h1, .content h2, .content h3 {
+      text-align: center;
+      margin: 16px 0 8px 0;
+    }
+    .content ul {
       list-style: none;
       padding: 0;
+      margin-left: 0;
     }
-    ul li::before {
+    .content ul li::before {
       content: "• ";
-      color: #6b4c9a;
+      font-weight: bold;
+    }
+    .content a {
+      color: #ffffff;
+      text-decoration: underline;
     }
     iframe {
-      margin-top: 40px;
+      display: block;
+      margin: 40px auto 0 auto;
       width: 100%;
+      max-width: 900px;
       height: 700px;
       border: none;
+    }
+    footer {
+      margin: 50px 0 30px 0;
+      font-size: 1em;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <!-- Logo: ana sayfaya, aynı sekmede -->
   <header>
-    <img src="logo_resized.jpg" alt="Paris with Florian Logo">
+    <a href="https://www.pariswithflorian.com/" target="_self">
+      <img src="banner_resized.png" alt="Paris with Florian Banner" />
+    </a>
   </header>
+
+  <!-- Üst menü (alt sayfa linkleri) -->
+  <nav class="top-links" aria-label="Section Navigation">
+    <a href="en.html" aria-current="page">The Tour</a>
+    <a href="en-services.html">Additional Services</a>
+    <a href="en-partners.html">International Partners</a>
+    <a href="en-social.html">Social Media</a>
+  </nav>
+
+  <!-- THE TOUR: mevcut içerik buraya yerleştirildi -->
   <div class="content">
     <h1>Paris with Florian</h1>
     <h2>Private Cultural Tours with a Scholar and Author</h2>
@@ -92,7 +145,13 @@
     <p>
       No payment will be requested during the booking process or prior to the tour.
     </p>
+
     <iframe src="https://forms.gle/yAxi9v3epXhy2WfU6" allowfullscreen></iframe>
   </div>
+
+  <footer>
+    <p>Contact: <a href="mailto:pariswithflorian@gmail.com">pariswithflorian@gmail.com</a></p>
+  </footer>
+
 </body>
 </html>
