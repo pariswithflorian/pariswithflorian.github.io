@@ -2,54 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Paris avec Florian – Français</title>
+  <title>Paris avec Florian – Français (La visite)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Spectral&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Spectral', serif;
+      font-family: sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       background-color: #b896c8;
-      color: #333;
+      color: #ffffff;
+      text-align: center;
       line-height: 1.6;
     }
     header {
-      text-align: center;
-      margin-bottom: 30px;
+      padding: 20px 0;
     }
     header img {
-      width: 250px;
+      width: 60%;
       height: auto;
-      margin-top: 20px;
+      max-width: 700px;
     }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      text-align: center;
+    .top-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px auto 20px auto;
+      padding: 0 16px;
+    }
+    .top-links a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid #ffffff;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+    .top-links a:hover {
+      background-color: #ffffff;
+      color: #b896c8;
     }
     .content {
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 30px auto 60px auto;
+      padding: 0 16px;
+      text-align: left;
     }
-    ul {
+    .content h1, .content h2, .content h3 {
+      text-align: center;
+      margin: 16px 0 8px 0;
+      color: #000000; /* başlıklar siyah */
+    }
+    .content ul {
       list-style: none;
       padding: 0;
+      margin-left: 0;
     }
-    ul li::before {
+    .content ul li::before {
       content: "• ";
-      color: #6b4c9a;
+      font-weight: bold;
+    }
+    .content a {
+      color: #ffffff;
+      text-decoration: underline;
     }
     iframe {
-      margin-top: 40px;
+      display: block;
+      margin: 40px auto 0 auto;
       width: 100%;
+      max-width: 900px;
+      height: 3329px;
       border: none;
+    }
+    footer {
+      margin: 50px 0 30px 0;
+      font-size: 1em;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo_resized.jpg" alt="Logo Paris avec Florian">
+    <a href="https://www.pariswithflorian.com/" target="_self">
+      <img src="banner_resized.png" alt="Paris avec Florian Bannière">
+    </a>
   </header>
+
+  <!-- üst menü -->
+  <nav class="top-links" aria-label="Navigation de section">
+    <a href="fr.html" aria-current="page">La visite</a>
+    <a href="fr-services.html">Services supplémentaires</a>
+    <a href="fr-partenaires.html">Partenaires internationaux</a>
+    <a href="fr-reseaux.html">Réseaux sociaux</a>
+  </nav>
+
   <div class="content">
     <h1>Paris avec Florian</h1>
     <h2>Visites culturelles privées avec un chercheur et auteur</h2>
@@ -91,7 +142,13 @@
     <p>
       Aucun paiement ne sera demandé lors du processus de réservation ni avant la visite.
     </p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAkvoZf0BosleMnBzpPb5tCy7lUz62AIOejf5ctuikLF4WRg/viewform?embedded=true" width="100%" height="3329" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAkvoZf0BosleMnBzpPb5tCy7lUz62AIOejf5ctuikLF4WRg/viewform?embedded=true">Chargement…</iframe>
   </div>
+
+  <footer>
+    <p>Contact : <a href="mailto:pariswithflorian@gmail.com">pariswithflorian@gmail.com</a></p>
+  </footer>
+
 </body>
 </html>
